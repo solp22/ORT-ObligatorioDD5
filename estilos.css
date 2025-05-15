@@ -1,499 +1,500 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "DM Sans", sans-serif;
-    text-decoration: none;
-}
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "DM Sans", sans-serif;
+        text-decoration: none;
+    }
 
-:root{
-    --rojomet: #ed0126;
-}
- 
-#portada{
-    height: 60vh;
-    background-image: url(img/fondo.jpg);
-    background-size: cover;
-    background-position: top;
-    display: flex;
-    flex-direction: column;
-}
-
-header nav{
-    display: none;
-}
-
-#hero {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2em;
-    text-align: center;
-
-}
-
-header{
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-
-main{
-    text-align: center;
-    margin: auto;
-    width: 90%;
-    max-width: 700px;
-}
-
-h1{
-    font-size: 3em;
-    margin-bottom: 1em;
-    color: white;
-    font-weight: 500;  
-}
-
-#suscribirse{
-    background-color: var(--rojomet);
-    border-radius: 30px;
-    padding: 2em 1em;
-    margin: 3em 1em;
-    color: white;
-    text-align: center;
-}
-
-#suscribirse h2{
-    font-size: 2em;
-}
-
-#suscribirse p{
-    font-size: 20px;
-    margin: 0.5em;
+    :root{
+        --rojomet: #ed0126;
+    }
     
-}
-
-#suscribirse input, select{
-    width: 90%;
-    padding: 1em;
-    margin-top: 1em;
-    border: none;
-    border-radius: 8px;
-    font-size: 1em;
-}
-
-#suscribirse a{
-    display: inline-block;
-    background-color: black;
-    color: white;
-    padding: 0.75em;
-    border: none;
-    border-radius: 30px;
-    width: 90%;
-    margin-top: 1em;
-    font-size: 1em;
-    font-weight: bold;
-}
-
-#fotos article{
-    height: 50vh;
-}
-
-#noticiaPrincipal{
-    background-image: url(img/red-carpet.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-
-#noticiaPrincipal a{
-    display: inline-block;
-    background-color: var(--rojomet);
-    color: white;
-    padding: 0.75em;
-    border: none;
-    border-radius: 30px;
-    margin-top: 1em;
-    font-size: 1em;
-    font-weight: bold;
-    width: 40%;
-    text-align: center;
-}
-
-#noticiaPrincipal h2{
-    color: white;
-    font-size: 2em;
-    margin: 0em 1em;
-}
-
-
-#zendaya{
-    background-image: url(img/zendaya.jpg);
-    background-color: black;
-    background-size: cover;
-    background-position: center;
-}
-
-#rihanna{
-    background-image: url(img/rihanna.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#teyana{
-    background-image: url(img/teyanataylor.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#emma{
-    display: none;
-}
-
-#tema{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-}
-#tema div{
-    background-color: var(--rojomet);
-    padding: 2em;
-    margin-bottom: 2em;
-}
-
-#tema h2{
-    text-align: center;
-
-    color: white;
-}
-
-#tema p{
-    text-align: justify;
-    margin: 0em 2em;
-    color: var(--rojomet);
-}
-
-#seccionNoticias h2{
-    font-size: 3em;
-    margin-top: 2em;
-    text-align: center;
-    color: var(--rojomet);
-}
-
-.noticia{
-    border: 2px solid var(--rojomet);
-    border-radius: 16px;
-    padding: 2em;
-    margin: 3em 1em 0em 1em;
-    text-align: center;
-}
-
-.noticia img{
-    width: 100%;
-    margin-bottom: 1em;
-}
-
-.noticia h3{
-    font-size: 1.3em;
-    margin-top: 0.5em 0;
-    color: rgb(0, 0, 0);
-}
-
-.noticia p{
-    font-size: 1em;
-    color: rgb(0, 0, 0);
-    margin: 0.5em 0 1em;
-}
-
-.noticia a{
-    display: inline-block;
-    margin-top: 0.25em;
-    border: 2px solid var(--rojomet);
-    border-radius: 50px;
-    padding: 0.5em 2em;
-    background: transparent;
-    font-weight: bold;
-    font-size: 1em;
-    color: var(--rojomet);
-}
-
-.escondida{
-    display: none;
-}
-
-footer{
-    background-color: var(--rojomet);
-    padding: 2em;
-    margin-top: 4em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: 500;
-    font-size: 1.4em;
-}
-
-footer a{
-    display: inline-block;
-    margin: 0em 0.2em;
-}
-
-footer img{
-    width: 35px;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-}
-
-footer div{
-    margin-top: 0.5em;
-}
-
-
-
-
-/* TABLET */
-@media all and (min-width:768px){
-    #burger{
-        display: none;
+    #portada{
+        height: 60vh;
+        background-image: url(img/fondo.jpg);
+        background-size: cover;
+        background-position: top;
+        display: flex;
+        flex-direction: column;
     }
 
     header nav{
-        display: block;
+        display: none;
     }
 
-    nav a{
-        color: white;
-        font-weight: 500;
-        margin: 0 0.7em;
-    }
-
-    main{
-        font-size: 1.2em;
-    }
-    #suscribirse input, select {
-        width: 35%;
-        margin-left: 0.5em;
-    }
-
-    #suscribirse a{
-        width: 25%;
-        margin-left: 0.5em;
-    }
-
-    #emma{
-        display: block;
-        background-image: url(img/emma\ chamberlain.jpg);
-        background-size: cover;
-        background-position: center;
-       
-    }
-
-    #fotos{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-
-    #fotos #noticiaPrincipal{
+    #hero {
         height: 100%;
-        grid-row: span 2;
-    }
-
-    #fotos article{
-        height: 40vh;
-    }
-
-    #tema{
-        grid-column: span 2;
-    }
-
-
-    #grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-
-    #outfits, #capas, #embarazada{
-        grid-row: span 2;
-    }
-
-    #alfombra, #metgala{
-        grid-row: span 1;
-    }
-
-    .noticia{
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
-        padding: 1.5em;
+        margin: 2em;
+        text-align: center;
+
     }
 
-    #noticiaPrincipal a{
-        font-size: 1.2em;
+    header{
+        padding: 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-
-    #tema div{
-        width: 100%;
-    }
-
-    #tema p{
-        margin: 0em 7em;
-    }
-    
-    #hero{
-        align-items: flex-end;
-        text-align: left;
-        justify-content: flex-start;
-    }
-    
-    footer{
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
-    footer div{
-        margin-left: 2em;
-    }
-}
 
 
 
-/* LAPTOP */
-@media all and (min-width:1200px){
+    main{
+        text-align: center;
+        margin: auto;
+        width: 90%;
+        max-width: 700px;
+    }
+
     h1{
-        margin-bottom: 0.2em;
-    }
-
-    #hero{
-        flex-direction: column;
-        width: 50%;
-        justify-content: flex-end;
-        margin: 5em;
-    }
-
-    #hero p{
-        display: block;
+        font-size: 3em;
+        margin-bottom: 1em;
         color: white;
-    }
-
-    body{
-        position: relative;
+        font-weight: 500;  
     }
 
     #suscribirse{
-        position: absolute;
-        top: 400px;
-        right: 100px;
-        width: 25%;
-        font-size: 0.7em;
+        background-color: var(--rojomet);
+        border-radius: 30px;
+        padding: 2em 1em;
+        margin: 3em 1em;
+        color: white;
+        text-align: center;
+    }
+
+    #suscribirse h2{
+        font-size: 2em;
     }
 
     #suscribirse p{
-        font-size:  1.5em;
-    }
-
-    #fotos{
-        margin-top: 5em;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        font-size: 20px;
+        margin: 0.5em;
+        
     }
 
     #suscribirse input, select{
         width: 90%;
+        padding: 1em;
+        margin-top: 1em;
+        border: none;
+        border-radius: 8px;
+        font-size: 1em;
     }
 
-    #suscribirse a{
+    #suscribirse button{
+        display: inline-block;
+        background-color: black;
+        color: white;
+        padding: 0.75em;
+        border: none;
+        border-radius: 30px;
         width: 90%;
-        transition: 0.3s;
+        margin: 1em 0em 0em 0em;
+        font-size: 1em;
+        font-weight: bold;
+        position: static;
+        cursor: pointer;
+    }
+
+    #fotos article{
+        height: 50vh;
+    }
+
+    #noticiaPrincipal{
+        background-image: url(img/red-carpet.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    #noticiaPrincipal a{
+        display: inline-block;
+        background-color: var(--rojomet);
+        color: white;
+        padding: 0.75em;
+        border: none;
+        border-radius: 30px;
+        margin-top: 1em;
+        font-size: 1em;
+        font-weight: bold;
+        width: 40%;
+        text-align: center;
+    }
+
+    #noticiaPrincipal h2{
+        color: white;
+        font-size: 2em;
+        margin: 0em 1em;
+    }
+
+
+    #zendaya{
+        background-image: url(img/zendaya.jpg);
+        background-color: black;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #rihanna{
+        background-image: url(img/rihanna.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #teyana{
+        background-image: url(img/teyanataylor.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #emma{
+        display: none;
     }
 
     #tema{
-        grid-column: span 1;
-        height: 100%;
-    }
 
-    #zendaya{
-        grid-column: span 2;
-    }
-
-    #tema p{
-        margin: 1em;
-    }
-
-    #grid{
         display: flex;
-        flex-wrap: wrap;
+        align-items: center;
         justify-content: center;
-    }
+        flex-direction: column;
 
-    #seccionNoticias .escondida{
-        display: block;
     }
-
-    #seccionNoticias article{
-        align-items: flex-start;
-        text-align: justify;   
-    }
-
-    #seccionNoticias h2{
-        margin-left: 0.5em;
-        text-align: left;
-    }
-
-    .noticia{
-        font-size: 1em;
-        width: 30%;
-    }
-    .contenedor {
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    nav a{
-        transition: 0.2s;
-    }
-
-    nav a:hover{
-        color: var(--rojomet);
-    }
-
-    #suscribirse a:hover{
-        background-color: white;
-        color: black;
-    }
-    #noticiaPrincipal a{
-        transition: 0.2s;
-    }
-
-    #noticiaPrincipal a:hover{
-        background-color: black;
-    }
-
-    .noticia a{
-        transition: 0.2s;
-    }
-
-    .noticia a:hover{
+    #tema div{
         background-color: var(--rojomet);
+        padding: 2em;
+        margin-bottom: 2em;
+    }
+
+    #tema h2{
+        text-align: center;
+
         color: white;
     }
 
+    #tema p{
+        text-align: justify;
+        margin: 0em 2em;
+        color: var(--rojomet);
+    }
 
-}
+    #seccionNoticias h2{
+        font-size: 3em;
+        margin-top: 2em;
+        text-align: center;
+        color: var(--rojomet);
+    }
+
+    .noticia{
+        border: 2px solid var(--rojomet);
+        border-radius: 16px;
+        padding: 2em;
+        margin: 3em 1em 0em 1em;
+        text-align: center;
+    }
+
+    .noticia img{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .noticia h3{
+        font-size: 1.3em;
+        margin-top: 0.5em 0em;
+        color: rgb(0, 0, 0);
+    }
+
+    .noticia p{
+        font-size: 1em;
+        color: rgb(0, 0, 0);
+        margin: 0.5em 0 1em;
+    }
+
+    .noticia a{
+        display: inline-block;
+        margin-top: 0.25em;
+        border: 2px solid var(--rojomet);
+        border-radius: 50px;
+        padding: 0.5em 2em;
+        background: transparent;
+        font-weight: bold;
+        font-size: 1em;
+        color: var(--rojomet);
+    }
+
+    .escondida{
+        display: none;
+    }
+
+    footer{
+        background-color: var(--rojomet);
+        padding: 2em;
+        margin-top: 4em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: 500;
+        font-size: 1.4em;
+    }
+
+    footer a{
+        display: inline-block;
+        margin: 0em 0.2em;
+    }
+
+    footer img{
+        width: 35px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer div{
+        margin-top: 0.5em;
+    }
+
+
+
+
+    /* TABLET */
+    @media all and (min-width:768px){
+        #burger{
+            display: none;
+        }
+
+        header nav{
+            display: block;
+        }
+
+        nav a{
+            color: white;
+            font-weight: 500;
+            margin: 0 0.7em;
+        }
+
+        main{
+            font-size: 1.2em;
+        }
+        #suscribirse input, select {
+            width: 35%;
+            margin-left: 0.5em;
+        }
+
+        #suscribirse button{
+            width: 25%;
+            margin-left: 0.5em;
+        }
+
+        #emma{
+            display: block;
+            background-image: url(img/emma-chamberlain.jpg);
+            background-size: cover;
+            background-position: center;
+        
+        }
+
+        #fotos{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+
+        #fotos #noticiaPrincipal{
+            height: 100%;
+            grid-row: span 2;
+        }
+
+        #fotos article{
+            height: 40vh;
+        }
+
+        #tema{
+            grid-column: span 2;
+        }
+
+
+        #grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+
+        #outfits, #capas, #embarazada{
+            grid-row: span 2;
+        }
+
+        #alfombra, #metgala{
+            grid-row: span 1;
+        }
+
+        .noticia{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 1.5em;
+        }
+
+        #noticiaPrincipal a{
+            font-size: 1.2em;
+        }
+
+        #tema div{
+            width: 100%;
+        }
+
+        #tema p{
+            margin: 0em 7em;
+        }
+        
+        #hero{
+            align-items: flex-end;
+            text-align: left;
+            justify-content: flex-start;
+        }
+        
+        footer{
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+        footer div{
+            margin-left: 2em;
+        }
+    }
+
+
+
+    /* LAPTOP */
+    @media all and (min-width:1200px){
+        h1{
+            margin-bottom: 0.2em;
+        }
+
+        #hero{
+            flex-direction: column;
+            width: 50%;
+            justify-content: flex-end;
+            margin: 5em;
+        }
+
+        #hero p{
+            display: block;
+            color: white;
+        }
+
+        body{
+            position: relative;
+        }
+
+        #suscribirse{
+            position: absolute;
+            top: 400px;
+            right: 100px;
+            width: 25%;
+            font-size: 0.7em;
+        }
+
+        #suscribirse p{
+            font-size:  1.5em;
+        }
+
+        #fotos{
+            margin-top: 5em;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        #suscribirse input, select{
+            width: 90%;
+        }
+
+        #suscribirse button{
+            width: 90%;
+            transition: 0.3s;
+        }
+
+        #tema{
+            grid-column: span 1;
+            height: 100%;
+        }
+
+        #zendaya{
+            grid-column: span 2;
+        }
+
+        #tema p{
+            margin: 1em;
+        }
+
+        #grid{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #seccionNoticias .escondida{
+            display: block;
+        }
+
+        #seccionNoticias article{
+            align-items: flex-start;
+            text-align: justify;   
+        }
+
+        #seccionNoticias h2{
+            margin-left: 0.5em;
+            text-align: left;
+        }
+
+        .noticia{
+            font-size: 1em;
+            width: 30%;
+        }
+
+        .contenedor {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        nav a{
+            transition: 0.2s;
+        }
+
+        nav a:hover{
+            color: var(--rojomet);
+        }
+
+        #suscribirse button:hover{
+            background-color: white;
+            color: black;
+        }
+        #noticiaPrincipal a{
+            transition: 0.2s;
+        }
+
+        #noticiaPrincipal a:hover{
+            background-color: black;
+        }
+
+        .noticia a{
+            transition: 0.2s;
+        }
+
+        .noticia a:hover{
+            background-color: var(--rojomet);
+            color: white;
+        }
+    }

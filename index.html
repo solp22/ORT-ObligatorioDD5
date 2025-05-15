@@ -10,7 +10,7 @@
 <body>
     <section id="portada">
       <header>
-            <a href="index.html"><img src="img/met logo.png" alt="logo del museo metropolitano"></a>
+            <a href="index.html"><img src="img/met-logo.png" alt="logo del museo metropolitano"></a>
             <img src="img/menu.png" alt="" id="burger">
             <nav>
                 <a href="">Inicio</a>
@@ -28,14 +28,17 @@
     <section id="suscribirse">
         <h2>Mantente actualizado</h2>
         <p>¡Suscríbete a nuestro newsletter para recibir las últimas noticias!</p>
-        <input type="email" name="mail" id="mail" placeholder="tucorreo@gmail.com">
-        <select name="select">
-            <option value="">Plan de suscripción</option>
-            <option value="1">Estándar</option>
-            <option value="2">Premium</option>
-            <option value="3">Platinum</option>
-        </select>
-        <a href="#">Suscribirse</a>
+        <form>
+            <input type="email" name="mail" id="mail" placeholder="tucorreo@gmail.com" required>
+            <select name="select" required>
+                <option value="" disabled selected>Elija su plan</option>   
+                <option value="1">Estándar</option>
+                <option value="2">Premium</option>
+                <option value="3">Platinum</option>
+            </select>
+            <button type="submit">Suscribirse</button>
+        </form>
+        
     </section>
 
     <section id="fotos">
@@ -71,7 +74,7 @@
                 <a href="#">Leer más</a>
             </article>
             <article class="noticia" id="embarazada">
-                <img src="img/rihanna embarazada.jpg" alt="rihanna embarazada">
+                <img src="img/rihanna-embarazada.jpg" alt="rihanna embarazada">
                 <h3>¡Rihanna está embarazada!</h3>
                 <p>La cantante sorprendió con su aparición en la gala revelando su pancita con un look icónico, convirtiéndose en el momento más comentado del evento.</p>
                 <a href="#">Leer más</a>
