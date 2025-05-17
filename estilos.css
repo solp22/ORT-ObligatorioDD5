@@ -264,6 +264,10 @@
         margin-top: 0.5em;
     }
 
+    .etiqueta{
+        display: none;
+    }
+
 
 
 
@@ -461,6 +465,7 @@
         .noticia{
             font-size: 1em;
             width: 30%;
+            position: relative;
         }
 
         .contenedor {
@@ -496,5 +501,26 @@
         .noticia a:hover{
             background-color: var(--rojomet);
             color: white;
+        }
+
+        .etiqueta{
+            display: block;
+            background-color: var(--rojomet);
+            padding: 0.5em;
+            width: 30%;
+            position: absolute;
+            text-align: left;
+            top: 20px;
+            right: 0px;
+            font-weight: 700;
+            color: white;
+        }
+
+        #capas div{
+            background-color: #e2344e;
+        }
+
+        #embarazada div{
+            background-color: #de6e7e;
         }
     }
